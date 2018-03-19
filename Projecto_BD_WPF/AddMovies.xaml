@@ -1,0 +1,50 @@
+﻿<Page x:Class="Projecto_BD_WPF.AddMovies"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000"
+	Title="AddMovies">
+
+    <Grid Height="500" Margin="10,12,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="1000" Grid.RowSpan="7" Grid.ColumnSpan="7" Background="LightGray">
+        <Label Content="Add Movie:" FontSize="40" FontWeight="Bold" HorizontalAlignment="Left" Margin="139,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="Movie Id: " HorizontalAlignment="Left" Margin="162,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Duration: " HorizontalAlignment="Left" Margin="162,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description: " HorizontalAlignment="Left" Margin="148,219,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age Restriction: " HorizontalAlignment="Left" Margin="128,287,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rating: " HorizontalAlignment="Left" Margin="174,335,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="movie_id" HorizontalAlignment="Left" Height="23" Margin="241,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265"/>
+        <TextBox Name="duration" HorizontalAlignment="Left" Height="23" Margin="241,178,0,0" TextWrapping="Wrap" Text="hh:mm:ss" VerticalAlignment="Top" Width="265"/>
+        <TextBox Name="rating" HorizontalAlignment="Left" Height="23" Margin="241,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="description" HorizontalAlignment="Left" Height="54" Margin="241,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265"/>
+        <ComboBox Name="age_restriction" HorizontalAlignment="Left" Margin="241,291,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="G"/>
+            <ComboBoxItem Content="PG"/>
+            <ComboBoxItem Content="PG-13"/>
+            <ComboBoxItem Content="R"/>
+            <ComboBoxItem Content="NC-17"/>
+        </ComboBox>
+        <ListBox Name="add_movie_actors" HorizontalAlignment="Left" Height="92" Margin="722,135,0,0" VerticalAlignment="Top" Width="216">
+
+        </ListBox>
+        <Label Content="Actors: " HorizontalAlignment="Left" Margin="665,135,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="add_movie_writers" HorizontalAlignment="Left" Height="92" Margin="722,232,0,0" VerticalAlignment="Top" Width="216">
+
+        </ListBox>
+        <Label Content="Writers: " HorizontalAlignment="Left" Margin="661,232,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="directors_combo_box" HorizontalAlignment="Left" Margin="722,339,0,0" VerticalAlignment="Top" Width="216"/>
+        <Label Content="Director: " HorizontalAlignment="Left" Margin="657,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.538"/>
+        <Button Name="add_movie_button" Click="add_movie_button_Click" Content="Add" HorizontalAlignment="Left" Margin="838,435,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="LightGreen"/>
+        <Button Name="cancel_add_movie_button" Click="cancel_add_movie_button_Click" Content="Cancel" HorizontalAlignment="Left" Margin="706,435,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#F22731"/>
+        <Label Content="Genre: " HorizontalAlignment="Left" Margin="176,386,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="genre_listbox" HorizontalAlignment="Left" Height="69" Margin="241,386,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Studio: " HorizontalAlignment="Left" Margin="665,386,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="studios_combo_box" HorizontalAlignment="Left" Margin="722,386,0,0" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="addNewGenres" HorizontalAlignment="Left" Height="23" Margin="241,460,0,0" TextWrapping="Wrap" Text="Add new genres" VerticalAlignment="Top" Width="120"/>
+        <Button Click="Button_Click" Content="Add" HorizontalAlignment="Left" Margin="366,460,0,0" VerticalAlignment="Top" Width="37"/>
+
+
+
+    </Grid>
+</Page>
